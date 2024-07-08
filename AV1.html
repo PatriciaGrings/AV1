@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Tinta</title>
+    <link rel="stylesheet" href="AV1.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Calculadora de Tinta</h1>
+        <h3>Calcule aqui a quantidade de tinta necessária para sua obra</h3>
+    </header>
+    <main>
+        <div >
+            <p>Qual tipo de tinta será utilizada?</p>
+            
+            <ol>
+                <li>
+                    Látex ou PVA </li>
+                <br>
+                <li>
+                    Acrílica </li>
+                <br>
+                <li>
+                    Esmalte </li>
+                <br>
+                <li>
+                    Epóxi </li>
+                <br>
+                <li>
+                    Óleo </li>
+                <br>
+                <li>
+                    Verniz </li>
+                <br>
+                <li>
+                    Acrílica fosca premium </li>
+                <br>
+                <li>
+                    Epóxi à base de água </li>
+                <br>
+            </ol>
+                <p>
+                    <input type="number" name="entrada" id="txtTinta">
+                    <input type="button" value="OK" name="tin" id="tin" onclick="tinta()">
+                </p>
+        </div>
+        <div>
+            <p>Quantas paredes você deseja pintar?
+                <input type="number" name="entrada" id="nParede">
+            </p>
+            <p>Digite a altura da parede:
+                <input type="number" name="entrada" id="hParede">
+            </p>
+            <p>Digite a largura da parede:
+                <input type="number" name="entrada" id="lParede">
+                <input type="button" value="OK" name="par" id="par" onclick="paredes()">
+            </p>
+        </div>
+        
+        <div>
+            <p>Existem portas ou janelas nesta parede?
+                <input type="radio" name="abert" id="sAbert" checked>
+                <label for="sim">Sim</label>
+                <input type="radio" name="abert" id="nAbert">
+                <label for="nao">Não</label>
+            </p>
+            <p>Quantas?
+                <input type="number" name="entrada" id="nAberturas">
+            </p>
+            <p>Digite a altura da porta/janela y:
+                <input type="number" name="entrada" id="hAberturas">
+            </p>
+            <p>Digite a largura da porta/janela y:
+                <input type="number" name="entrada" id="lAberturas">
+                <input type="button" value="OK" name="aberturas" id="aberturas" onclick="aberturas()">
+            </p>
+        </div>
+    </main>
+    <footer>Calculadora desenvolvida por Patricia Grings</footer>
 </body>
+<script src="AV1.js"></script>
 </html>
