@@ -49,6 +49,7 @@
         <div>
             <p>Quantas paredes você deseja pintar?
                 <input type="number" name="entrada" id="nParede">
+                <input type="button" value="OK" name="par" id="par" onclick="paredes()">
             </p>
             <p>Digite a altura da parede:
                 <input type="number" name="entrada" id="hParede">
@@ -59,7 +60,7 @@
             </p>
         </div>
         
-        <div>
+        <!--<div>
             <p>Existem portas ou janelas nesta parede?
                 <input type="radio" name="abert" id="sAbert" checked>
                 <label for="sim">Sim</label>
@@ -76,7 +77,12 @@
                 <input type="number" name="entrada" id="lAberturas">
                 <input type="button" value="OK" name="aberturas" id="aberturas" onclick="aberturas()">
             </p>
+        </div>-->
+        <div>
+            <h2>Cálculo de tinta</h2>
+            <input type="button" value="Calculadora" name="resultado" id="resultado" onclick="calcular()">
         </div>
+        
     </main>
     <footer>Calculadora desenvolvida por Patricia Grings</footer>
 </body>

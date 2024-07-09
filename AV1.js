@@ -28,28 +28,64 @@ function tinta() {
            var quantidade= 9
         break
     }
+    window.alert(quantidade)
+    return quantidade;
+    
 }
+    var hParedes=[]
+    var lParedes=[]
+    var hAberturas=[]
+    var lAberturas=[]
+    var aberturas=[]
 function paredes() {
-    var qtPar = document.getElementById('nParede')
-    var qtdPar = Number(qtPar.value)
-    var altPar = document.getElementById('hParede')
-    var hPar = Number(altPar.value)
-    var largPar = document.getElementById('lParede')
-    var lPar = Number(largPar.value)  
-    if (abert[0].checked) {
-        
-    }
-}
-    function aberturas() {
-        var qtAbert = document.getElementById('nAberturas')
-        var qtdAbert = Number(qtAbert.value)
-        var altAbert = document.getElementById('hAberturas')
-        var hAbert = Number(altAbert.value)
-        var largAbert = document.getElementById('lAberturas')
-        var lAbert = Number(largAbert.value)
-}    
+    var qtPar = document.getElementById('nParede').value
+    window.alert(qtPar)
 
-function calculoParede() {
-    for (var c=1; c=qtdPar; c++)
+    for(var c=1; c<=qtPar; c++){
+        var z= window.prompt('Esta parede possui alguma porta ou janela? (s ou n)')
+        if (z=='s') {
+            var z3= window.prompt('Quantas portas/janelas possui?')
+            for(var cont=1; cont<=z3; cont++) {
+            var z1= window.prompt('Digite a altura da '+ cont + ' abertura: ')
+            hAberturas.push(z1)
+            var z2= window.prompt('Digite a largura da '+ cont + ' abertura: ')
+            lAberturas.push(z2)
+        }
+        }
+        else if (z=='n'){
+            hAberturas.push(0)
+            lAberturas.push(0)
+        }
+        else {
+            window.prompt('Opção inválida! Digite s ou n')
+        }
+        var x= window.prompt('Digite a altura da '+ c + ' parede: ')
+        hParedes.push(x)
         
+        var y= window.prompt('Digite a largura da '+ c + ' parede: ')
+        lParedes.push(y)
+       
+    }
+    /*window.alert(hParedes)
+    window.alert(lParedes)
+    window.alert(hAberturas)
+    window.alert(lAberturas)*/ 
+    return qtPar;
+    /*for(var c=1; c<=qtPar; c++){ 
+
+    }*/
+   
 }
+function calcular() {
+    var a = tinta()
+    var b = paredes()
+    window.alert(a)
+    window.alert(b)
+    for (var conta=1; conta<=b; conta++){
+        var parede = (hParedes*lParedes)-aberturas
+        window.alert(parede)
+    }
+    
+}     
+    
+
