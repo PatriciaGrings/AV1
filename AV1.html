@@ -42,14 +42,21 @@
                 <br>
             </ol>
                 <p>
-                    <input type="number" name="entrada" id="txtTinta">
-                    <input type="button" value="OK" name="tin" id="tin" onclick="tinta()">
+                    <input type="number" name="entrada" id="txtTinta"> <!-- Entrada de dados -->
+                    <select name="saida" id="txtTipotinta" size="1"> </select> <!-- Saída de dados -->
+                    <input type="button" value="OK" name="tin" id="tin" onclick="tinta()"> <!-- Botão -->
                 </p>
         </div>
         <div>
-            <p>Quantas paredes você deseja pintar?
+            <!--<p>Existem portas ou janelas na parede?</p>
+                <input type="text" name="entrada" id="temAberturas">
+                <input type="radio" name="abert" id="sAbert">
+                <label for="sim">Sim</label>
+                <input type="radio" name="abert" id="nAbert" checked>
+                <label for="nao">Não</label>-->
+            <!--<p>Quantas paredes você deseja pintar?
                 <input type="number" name="entrada" id="nParede">
-                <input type="button" value="OK" name="par" id="par" onclick="paredes()">
+                <input type="button" value="OK" name="par" id="par" onclick="paredes()"> -->
             </p>
             <p>Digite a altura da parede:
                 <input type="number" name="entrada" id="hParede">
@@ -60,15 +67,11 @@
             </p>
         </div>
         
-        <!--<div>
-            <p>Existem portas ou janelas nesta parede?
-                <input type="radio" name="abert" id="sAbert" checked>
-                <label for="sim">Sim</label>
-                <input type="radio" name="abert" id="nAbert">
-                <label for="nao">Não</label>
-            </p>
-            <p>Quantas?
+        
+            
+            <!--<p>Quantas?
                 <input type="number" name="entrada" id="nAberturas">
+                <input type="button" value="OK" name="abert" id="abert" onclick="entradaAberturas()">-->
             </p>
             <p>Digite a altura da porta/janela y:
                 <input type="number" name="entrada" id="hAberturas">
@@ -77,9 +80,10 @@
                 <input type="number" name="entrada" id="lAberturas">
                 <input type="button" value="OK" name="aberturas" id="aberturas" onclick="aberturas()">
             </p>
-        </div>-->
+        </div>
         <div>
             <h2>Cálculo de tinta</h2>
+            <select name="saida" id="txttab" size="10"> </select>
             <input type="button" value="Calculadora" name="resultado" id="resultado" onclick="calcular()">
         </div>
         
