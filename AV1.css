@@ -13,25 +13,29 @@
 }
 body{
 background-image: linear-gradient(45deg, #F9DEC9, #E9AFA3);
+background-image: url(imagens/fundo.jpg);
+background-size: cover;
 }
 header{
     text-align: center;
-    background-color: #7ea16b9d;
+    background-color: #e9afa3a8;
     margin: auto;
     width: 700px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 main{
     background-color: #7ea16b9d;
     margin: auto;
     width: 700px;
     padding-bottom: 50px;
+    
 }
 h1{
     color: var(--cor1);
     font-family: "Merienda", cursive;
     font-optical-sizing: auto;
     font-style: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 h2{
     color: var(--cor1);
@@ -39,16 +43,19 @@ h2{
     font-family: "Merienda", cursive;
     font-optical-sizing: auto;
     font-style: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 h4{
     color: var(--cor2);
     font-family: "Merienda", cursive;
     font-optical-sizing: auto;
     font-style: normal;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 p{
     text-align: center;
     color: var(--cor5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
     font-family: "Indie Flower", cursive;
     font-style: normal;
     font-size: 20px;
@@ -56,28 +63,32 @@ p{
 .listaCentro {
     list-style-position: inside; 
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
     color: var(--cor5);
     font-family: "Indie Flower", cursive;
     font-style: normal;
     font-size: 18px;
     column-count: 2;
+    line-height: 1.8em;
 }
 .entradaDados{
     color: var(--cor5);
     background-color: var(--cor3);
+    border-style: dashed;
 }
 .saidaDados{
     color: var(--cor5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
     margin: auto;
-    background-color: var(--cor3);
+    background-color: #f9dec9bb;
     width: 400px;
     font-family: "Indie Flower", cursive;
     font-size: 18px;
     text-align: center;
     min-height: 50px;
     height: auto;
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.164);
     border-radius: 5px;
+
 }
 .botão{
     color: var(--cor5);
@@ -91,6 +102,7 @@ p{
     font-family: "Indie Flower", cursive;
     font-size: 18px;
     text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
 }
 #resultado{
     display: block;
@@ -100,6 +112,11 @@ p{
 #botão{
     display: block;
     margin: auto;
+}
+.atenção{
+    margin: auto;
+    font-size: 15px;
+    width: 350px;
 }
 footer{
     text-align: center;
