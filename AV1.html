@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Tinta</title>
     <link rel="stylesheet" href="AV1.css">
+    
 </head>
 <body>
     <header>
         <h1>Calculadora de Tinta</h1>
-        <h3>Calcule aqui a quantidade de tinta necessária para sua obra</h3>
+        <h4>Calcule aqui a quantidade de tinta necessária para sua obra</h3>
     </header>
     <main>
-        <div >
+        <div>
             <p>Qual tipo de tinta será utilizada?</p>
             
-            <ol>
+            <ol class="listaCentro">
                 <li>
                     Látex ou PVA </li>
                 <br>
@@ -42,51 +43,46 @@
                 <br>
             </ol>
                 <p>
-                    <input type="number" name="entrada" id="txtTinta"> <!-- Entrada de dados -->
-                    <select name="saida" id="txtTipotinta" size="1"> </select> <!-- Saída de dados -->
-                    <input type="button" value="OK" name="tin" id="tin" onclick="tinta()"> <!-- Botão -->
+                    <label for="tipoTinta">Digite um número: </label><input type="number" name="entrada" id="txtTinta" class="entradaDados">  <!-- Entrada de dados -->
+                    <input type="button" value="OK" name="tin" id="tin" class="botão" onclick="tinta()"> <!-- Botão -->
+                    <div id="txtTipotinta" class="saidaDados">Seleção:</div>    <!-- Saída de dados -->
                 </p>
         </div>
         <div>
-            <!--<p>Existem portas ou janelas na parede?</p>
-                <input type="text" name="entrada" id="temAberturas">
-                <input type="radio" name="abert" id="sAbert">
-                <label for="sim">Sim</label>
-                <input type="radio" name="abert" id="nAbert" checked>
-                <label for="nao">Não</label>-->
-            <!--<p>Quantas paredes você deseja pintar?
-                <input type="number" name="entrada" id="nParede">
-                <input type="button" value="OK" name="par" id="par" onclick="paredes()"> -->
-            </p>
+            <h2>Cálculo de área das paredes</h2>
             <p>Digite a altura da parede:
-                <input type="number" name="entrada" id="hParede">
+                <input type="number" name="entrada" id="hParede" class="entradaDados">   <!-- Entrada de dados -->
             </p>
             <p>Digite a largura da parede:
-                <input type="number" name="entrada" id="lParede">
-                <input type="button" value="OK" name="par" id="par" onclick="paredes()">
+                <input type="number" name="entrada" id="lParede" class="entradaDados">   <!-- Entrada de dados -->
+                <input type="button" value="OK" name="par" id="par" class="botão" onclick="paredes()">
+            </p>
+            <p>
+                <div id="txtParede" class="saidaDados">Paredes:</div>   <!-- Saída de dados -->
             </p>
         </div>
-        
-        
-            
-            <!--<p>Quantas?
-                <input type="number" name="entrada" id="nAberturas">
-                <input type="button" value="OK" name="abert" id="abert" onclick="entradaAberturas()">-->
-            </p>
+        <div>
+            <h2>Cálculo de área das aberturas</h2>
             <p>Digite a altura da porta/janela y:
-                <input type="number" name="entrada" id="hAberturas">
+                <input type="number" name="entrada" id="hAberturas" class="entradaDados">
             </p>
             <p>Digite a largura da porta/janela y:
-                <input type="number" name="entrada" id="lAberturas">
-                <input type="button" value="OK" name="aberturas" id="aberturas" onclick="aberturas()">
+                <input type="number" name="entrada" id="lAberturas" class="entradaDados">
+                <input type="button" value="OK" name="aberturas" id="aberturas" class="botão" onclick="aberturas()">
+            </p>
+            <p>
+                <div id="txtAbert" class="saidaDados">Aberturas:</div>  <!-- Saída de dados -->
             </p>
         </div>
         <div>
             <h2>Cálculo de tinta</h2>
-            <select name="saida" id="txttab" size="10"> </select>
-            <input type="button" value="Calculadora" name="resultado" id="resultado" onclick="calcular()">
+            <input type="button" value="Calculadora" name="resultado" id="resultado" class="botão" onclick="calcular()">
         </div>
-        
+        <div id="txtCalculo2" class="saidaDados">Total de Tinta</div>
+        <div> 
+            <h2>Novo Cálculo</h2>
+            <input type="button" value="Reiniciar" id="botão" class="botão" onclick="resetForm()">
+        </div>
     </main>
     <footer>Calculadora desenvolvida por Patricia Grings</footer>
 </body>
