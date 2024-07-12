@@ -62,21 +62,57 @@ p{
     font-style: normal;
     font-size: 20px;
 }
+.titulo {
+    color: var(--cor5);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+    font-family: "Indie Flower", cursive;
+    font-style: normal;
+    font-size: 20px;
+}
+.formulario {
+    text-align: center;
+    margin-bottom: 5px;
+    line-height: 2em;
+}
 .listaCentro {
+    place-items: center;
     list-style-position: inside; 
     text-align: center;
+    align-items: center;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
     color: var(--cor5);
     font-family: "Indie Flower", cursive;
     font-style: normal;
     font-size: 18px;
     column-count: 2;
-    line-height: 1.8em;
+    display: flex;
+    flex-wrap: wrap;
 }
+.botaoTinta {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor5);
+    margin: auto;
+    background-color: var(--cor2);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.164);
+    width: 150px;
+    height: 60px;
+    font-family: "Indie Flower", cursive;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+    line-height: 1.5em;
+    margin-bottom: 5px;
+}
+
 .entradaDados{
     color: var(--cor5);
     background-color: var(--cor3);
     border-style: dashed;
+
 }
 .saidaDados{
     color: var(--cor5);
@@ -90,7 +126,6 @@ p{
     min-height: 50px;
     height: auto;
     border-radius: 5px;
-
 }
 .botão{
     color: var(--cor5);
@@ -121,6 +156,68 @@ p{
     width: 350px;
     color: red;
 }
+#dv1{
+    color: var(--cor5);
+    margin: auto;
+    background-color: var(--cor2);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.164);
+    width: 100px;
+    height: 40px;
+    font-family: "Indie Flower", cursive;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+    line-height: 2em;
+}
+#dv1:hover{
+    background-color: var(--cor5);
+}
+#dv1:active{
+    background-color: #3A405A;
+}
+
+.aoClicar {
+    position: relative;
+    text-align: center;
+    color: var(--cor5);
+    margin: auto;
+    background-color: var(--cor2);
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.164);
+    width: 100px;
+    height: 40px;
+    font-family: "Indie Flower", cursive;
+    font-size: 18px;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.37);
+    line-height: 2em;
+}
+.aoClicar:hover{
+    background-color: var(--cor5);
+}
+.aoClicar::after {
+    content: "Clique Aqui!";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+}
+.aoClicar:hover::after {
+    opacity: 1;
+}
+
+
+
 footer{
     text-align: center;
     font-family: "Indie Flower", cursive;
