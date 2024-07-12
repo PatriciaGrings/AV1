@@ -17,47 +17,44 @@
             <p>Qual tipo de tinta será utilizada?</p>
             
             <ol class="listaCentro">
-                <li> <abbr title="Tinta à base de água para interiores">Látex ou PVA</abbr> </li>
-                <li> <abbr title="Tinta resistente para ambientes internos e externos">Acrílica</abbr> </li>
-                <li> <abbr title="Proteção durável para superfícies metálicas e de madeira">Esmalte</abbr> </li>
-                <li> <abbr title="Revestimento resistente e impermeável para ambientes internos e externos">Epóxi</abbr> </li>
-                <li> <abbr title="Revestimento durável e de secagem lenta para superfícies variadas">Óleo</abbr> </li>
-                <li> <abbr title="Proteção e acabamento transparente para madeiras e metais">Verniz</abbr> </li>
-                <li> <abbr title="Acabamento resistente e sofisticado com baixo brilho">Acrílica fosca premium</abbr> </li>
-                <li> <abbr title="Revestimento durável e de fácil aplicação, com base aquosa">Epóxi à base de água</abbr> </li>
+                <li id="op1" value="8" class="botaoTinta"> <abbr title="Tinta à base de água para interiores">Látex ou PVA</abbr> </li>
+                <li id="op2" class="botaoTinta"> <abbr title="Tinta resistente para ambientes internos e externos">Acrílica</abbr> </li>
+                <li id="op3" class="botaoTinta"> <abbr title="Proteção durável para superfícies metálicas e de madeira">Esmalte</abbr> </li>
+                <li id="op4" class="botaoTinta"> <abbr title="Revestimento resistente e impermeável para ambientes internos e externos">Epóxi</abbr> </li>
+                <li id="op5" class="botaoTinta"> <abbr title="Revestimento durável e de secagem lenta para superfícies variadas">Óleo</abbr> </li>
+                <li id="op6" class="botaoTinta"> <abbr title="Proteção e acabamento transparente para madeiras e metais">Verniz</abbr> </li>
+                <li id="op7" class="botaoTinta"> <abbr title="Acabamento resistente e sofisticado com baixo brilho">Acrílica fosca premium</abbr> </li>
+                <li id="op8" class="botaoTinta"> <abbr title="Revestimento durável e de fácil aplicação, com base aquosa">Epóxi à base de água</abbr> </li>
             </ol>
                 <p>
-                    <label for="tipoTinta">Digite um número: </label><input type="number" name="entrada" id="txtTinta" class="entradaDados">  <!-- Entrada de dados -->
-                    <input type="button" value="OK" name="tin" id="tin" class="botão" onclick="tinta()"> <!-- Botão -->
                     <div id="txtTipotinta" class="saidaDados">Seleção:</div>    <!-- Saída de dados -->
+                    <!--<div id="dv1" class="aoClicar">OK</div>-->
                 </p>
         </div>
         <div>
             <h2>Cálculo de área das paredes</h2>
             <p class="atenção">É importante que todas as dimensões sejam inseridas em metro!</p>
-            <p>Digite a altura da parede:
-                <input type="number" name="entrada" id="hParede" class="entradaDados">   <!-- Entrada de dados -->
-            </p>
-            <p>Digite a largura da parede:
-                <input type="number" name="entrada" id="lParede" class="entradaDados">   <!-- Entrada de dados -->
-                <input type="button" value="OK" name="par" id="par" class="botão" onclick="paredes()">  <!-- Botão que chama a função paredes -->
-            </p>
-            <p>
+            <form action="" class="formulario">
+                    <label for="" class="titulo">Digite a altura da parede:</label>
+                    <input type="number" name="entrada" id="hParede" class="entradaDados" placeholder="0.00" required>   <!-- Entrada de dados -->
+                    </br>
+                    <label for="" class="titulo">Digite a largura da parede:</label>
+                    <input type="number" name="entrada" id="lParede" class="entradaDados" placeholder="0.00" required>   <!-- Entrada de dados -->
+                    <input type="button" value="OK" name="par" id="par" class="botão" onclick="paredes()">  <!-- Botão que chama a função paredes -->
+            </form>
                 <div id="txtParede" class="saidaDados">Paredes:</div>   <!-- Saída de dados -->
-            </p>
         </div>
         <div>
             <h2>Cálculo de área das aberturas</h2>
-            <p>Digite a altura da porta/janela:
-                <input type="number" name="entrada" id="hAberturas" class="entradaDados">
-            </p>
-            <p>Digite a largura da porta/janela:
-                <input type="number" name="entrada" id="lAberturas" class="entradaDados">
-                <input type="button" value="OK" name="aberturas" id="aberturas" class="botão" onclick="aberturas()">    <!-- Botão que chama a função aberturas -->
-            </p>
-            <p>
+                <form action="" class="formulario">
+                    <label for="" class="titulo">Digite a altura da porta/janela:</label>
+                    <input type="number" name="entrada" id="hAberturas" class="entradaDados" placeholder="0.00" required>
+                    </br>
+                    <label for="" class="titulo">Digite a largura da porta/janela:</label>
+                    <input type="number" name="entrada" id="lAberturas" class="entradaDados" placeholder="0.00" required>
+                    <input type="button" value="OK" name="aber" id="aber" class="botão" onclick="aberturas()">    <!-- Botão que chama a função aberturas -->
+                </form>
                 <div id="txtAbert" class="saidaDados">Aberturas:</div>  <!-- Saída de dados -->
-            </p>
         </div>
         <div>
             <h2>Cálculo de tinta</h2>
