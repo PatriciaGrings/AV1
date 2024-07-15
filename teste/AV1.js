@@ -26,24 +26,9 @@ function evList(n1,n2) {
 function tinta(){
     elementoClicado = this
     textoElemento = elementoClicado.value
-    if (elementoClicado.id === 'op1' || elementoClicado.id === 'op2' || elementoClicado.id === 'op4') {
-        textoElemento = 8;
-    }
-    else if (elementoClicado.id === 'op3' || elementoClicado.id === 'op6') {
-        textoElemento = 12;
-    }
-    else if (elementoClicado.id === 'op5') {
-        textoElemento = 10;
-    }
-    else if (elementoClicado.id === 'op7') {
-        textoElemento = 14;
-    }
-    else if (elementoClicado.id === 'op8') {
-        textoElemento = 9;
-    }
-
+    
     var tintas= document.getElementById('txtTipotinta') /*Cria uma variável para interagir com a div que vai mostrar o tipo de tinta escolhido*/
-    tintas.innerHTML= 'Você selecionou tinta: ' + elementoClicado.innerText
+    tintas.innerHTML= 'Você selecionou tinta: ' + elementoClicado.innerHTML
     document.getElementById('txtTinta').value = "" /*Limpa no HTML o tipo de tinta escolhido */
 }
 
